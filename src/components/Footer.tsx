@@ -133,7 +133,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5 text-gray-400 group-hover:text-white group-active:text-white transition-colors" />
               </a>
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@neil.bakery?_r=1&_t=ZS-92fo6yS6fib"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group p-3 bg-white/5 hover:bg-linear-to-r hover:from-[#e98d1a] hover:to-[#d17a0f] active:bg-linear-to-r active:from-[#e98d1a] active:to-[#d17a0f] rounded-xl border border-white/10 hover:border-transparent active:border-transparent transition-all duration-300 hover:scale-110 active:scale-110"
