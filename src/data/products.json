@@ -267,16 +267,16 @@
       "image": "/assets/images/spring_roll.jpg"
     },
     {
-      "name": "Macaroni Small",
-      "description": "Small portion of macaroni",
-      "price": 200,
-      "image": "/assets/images/macaroni_small.jpg"
+      "name": "Gnanakatha Small",
+      "description": "Small portion of gnanakatha",
+      "price": 20,
+      "image": "/assets/images/gnanakatha_small.jpg"
     },
     {
-      "name": "Macaroni Large",
-      "description": "Large portion of macaroni",
-      "price": 600,
-      "image": "/assets/images/macaroni_large.jpg"
+      "name": "Gnanakatha Large",
+      "description": "Large portion of gnanakatha",
+      "price": 60,
+      "image": "/assets/images/gnanakatha_large.jpg"
     }
   ],
   "cakes": [
