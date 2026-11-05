@@ -3,13 +3,13 @@
     {
       "name": "Bread Large",
       "description": "Soft large loaf of bread",
-      "price": 130,
+      "price": 150,
       "image": "/assets/images/bread_large.png"
     },
     {
       "name": "Bread Small",
       "description": "Small loaf of bread",
-      "price": 100,
+      "price": 110,
       "image": "/assets/images/bread_small.png"
     },
     {
@@ -27,13 +27,13 @@
     {
       "name": "Normal Slice",
       "description": "Soft sliced loaf of bread",
-      "price": 155,
+      "price": 160,
       "image": "/assets/images/normal_slice.png"
     },
     {
       "name": "Roast Bread",
       "description": "Crispy roasted bread",
-      "price": 40,
+      "price": 50,
       "image": "/assets/images/roast_bread.png"
     }
   ],
@@ -47,49 +47,49 @@
     {
       "name": "Fish Bun Small",
       "description": "Small fish filled bun",
-      "price": 60,
+      "price": 80,
       "image": "/assets/images/fish_bun_small.jpg"
     },
     {
       "name": "Fish Bun Large",
       "description": "Large bun with fish filling",
-      "price": 80,
+      "price": 100,
       "image": "/assets/images/fish_bun_large.jpg"
     },
     {
       "name": "Seeni Sambol Bun",
       "description": "Sweet and spicy sambol bun",
-      "price": 70,
+      "price": 100,
       "image": "/assets/images/seeni_sambol_bun.jpg"
     },
     {
       "name": "Sausage Bun Small",
       "description": "Small bun with sausage filling",
-      "price": 70,
+      "price": 90,
       "image": "/assets/images/sausage_bun_small.jpg"
     },
     {
       "name": "Sausage Bun Large",
       "description": "Large bun stuffed with sausage",
-      "price": 120,
+      "price": 140,
       "image": "/assets/images/sausage_bun_large.jpg"
     },
     {
       "name": "Egg Bun",
       "description": "Bun filled with boiled egg",
-      "price": 100,
+      "price": 120,
       "image": "/assets/images/egg_bun.jpg"
     },
     {
       "name": "Ham Burger",
       "description": "Soft burger with ham patty",
-      "price": 120,
+      "price": 140,
       "image": "/assets/images/ham_burger.jpg"
     },
     {
       "name": "Chicken Burger",
       "description": "Crispy chicken burger with sauce",
-      "price": 170,
+      "price": 190,
       "image": "/assets/images/chicken_burger.jpg"
     },
     {
@@ -101,7 +101,7 @@
     {
       "name": "Drumstick Bun",
       "description": "Bun stuffed with drumstick",
-      "price": 100,
+      "price": 130,
       "image": "/assets/images/drumstick_bun.jpg"
     },
     {
@@ -143,19 +143,19 @@
     {
       "name": "Fish Pattie",
       "description": "Crispy patty filled with fish",
-      "price": 90,
+      "price": 110,
       "image": "/assets/images/fish_patties.jpg"
     },
     {
       "name": "Chicken Pattie",
       "description": "Golden pattie with chicken filling",
-      "price": 130,
+      "price": 160,
       "image": "/assets/images/chicken_patties.jpg"
     },
     {
       "name": "Vegetable Pattie",
       "description": "Vegetable filled crispy patties",
-      "price": 90,
+      "price": 110,
       "image": "/assets/images/veg_patties.jpg"
     },
     {
@@ -167,25 +167,25 @@
     {
       "name": "Vegetable Cutlet",
       "description": "Crispy vegetable cutlet",
-      "price": 60,
+      "price": 90,
       "image": "/assets/images/veg_cutlet.jpg"
     },
     {
       "name": "Cheese Sandwich",
       "description": "Simple creamy cheese sandwich",
-      "price": 130,
+      "price": 160,
       "image": "/assets/images/cheese_sandwich.jpg"
     },
     {
       "name": "Fish Sandwich",
       "description": "Soft sandwich with fish filling",
-      "price": 70,
+      "price": 100,
       "image": "/assets/images/fish_sandwich.jpg"
     },
     {
       "name": "Egg Sandwich",
       "description": "Light sandwich with egg filling",
-      "price": 70,
+      "price": 100,
       "image": "/assets/images/egg_sandwich.jpg"
     },
     {
@@ -197,13 +197,13 @@
     {
       "name": "Club Sandwich",
       "description": "Layered club sandwich snack",
-      "price": 240,
+      "price": 260,
       "image": "/assets/images/club_sandwich.jpg"
     },
     {
       "name": "Chicken Sandwich",
       "description": "Soft sandwich with chicken filling",
-      "price": 130,
+      "price": 190,
       "image": "/assets/images/chicken_sandwich.jpg"
     },
     {
@@ -215,19 +215,19 @@
     {
       "name": "Fish Pastry",
       "description": "Flaky pastry with fish filling",
-      "price": 90,
+      "price": 120,
       "image": "/assets/images/fish_pastry.jpg"
     },
     {
       "name": "Chicken Pastry",
       "description": "Crispy pastry with chicken filling",
-      "price": 140,
+      "price": 150,
       "image": "/assets/images/chicken_pastry.jpg"
     },
     {
       "name": "Vegetable Pastry",
       "description": "Pastry filled with vegetables",
-      "price": 90,
+      "price": 110,
       "image": "/assets/images/veg_pastry.jpg"
     },
     {
@@ -239,19 +239,19 @@
     {
       "name": "Fish Roll",
       "description": "Deep fried roll with fish",
-      "price": 80,
+      "price": 100,
       "image": "/assets/images/fish_roll.jpg"
     },
     {
       "name": "Egg Roll",
       "description": "Deep fried roll filled with an egg",
-      "price": 100,
+      "price": 120,
       "image": "/assets/images/egg_roll.jpg"
     },
     {
       "name": "Chicken Roll",
       "description": "Crispy roll with chicken filling",
-      "price": 120,
+      "price": 150,
       "image": "/assets/images/chicken_roll.jpg"
     },
     {
@@ -343,9 +343,15 @@
   ],
   "drinks": [
     {
+      "name": "Smoothie",
+      "description": "Fresh blended fruit smoothie",
+      "price": 0,
+      "image": "/assets/images/smoothie.jpg"
+    },
+    {
       "name": "Ice Coffee NB",
       "description": "Chilled strong iced coffee",
-      "price": 190,
+      "price": 200,
       "image": "/assets/images/ice_coffee_nb.jpg"
     },
     {
@@ -491,13 +497,13 @@
     {
       "name": "Doughnut",
       "description": "Soft round doughnut with icing",
-      "price": 120,
+      "price": 150,
       "image": "/assets/images/doughnut.jpg"
     },
     {
       "name": "Éclair",
       "description": "Cream filled chocolate éclair",
-      "price": 120,
+      "price": 140,
       "image": "/assets/images/eclair.jpg"
     },
     {

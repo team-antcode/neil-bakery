@@ -35,7 +35,7 @@ export interface Outlet {
   name: string;
   address: string;
   hours: string;
-  phone: string;
+  phone?: string;
   lat: number;
   lng: number;
 }
