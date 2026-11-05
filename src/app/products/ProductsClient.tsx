@@ -191,6 +191,9 @@ export default function ProductsClient({ products }: Props) {
                                                 className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                                                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                                                 priority={index < 4}
+                                                onError={(event) => {
+                                                    event.currentTarget.src = "/logo.png";
+                                                }}
                                             />
                                         </div>
 
@@ -202,7 +205,11 @@ export default function ProductsClient({ products }: Props) {
                                             </div>
 
                                             <div className="flex items-center justify-between pt-3 border-t border-neutral-200">
-                                                <span className="text-2xl font-bold text-neutral-900">{formatPrice(product.price)}</span>
+                                                <span className="text-2xl font-bold text-neutral-900">
+                                                    {product.name === "Smoothie" && product.price === 0
+                                                        ? "Price coming soon" // TODO: replace the Smoothie placeholder price.
+                                                        : formatPrice(product.price)}
+                                                </span>
                                             </div>
                                         </div>
                                     </div>

@@ -72,25 +72,28 @@ export default function Outlets() {
                 }`}
               >
                 <div className="pr-12">
-                  <h3 className="text-lg sm:text-xl font-bold text-black mb-3 flex items-center gap-2">
-                    {outlet.name}
-                  </h3>
+                  <div className="mb-2 flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
+                    <h3 className="text-lg sm:text-xl font-bold text-black">
+                      {outlet.name}
+                    </h3>
+                    <p className="text-green-600 text-xs sm:text-sm font-semibold flex items-center gap-1.5 bg-green-50 px-3 py-1.5 rounded-lg whitespace-nowrap">
+                      <span>🕒</span>
+                      {outlet.hours}
+                    </p>
+                  </div>
 
-                  <div className="space-y-2.5">
+                  <div className="space-y-2">
                     <p className="text-gray-700 text-sm sm:text-base flex items-start gap-2">
                       <span className="text-[#e98d1a] mt-0.5">📍</span>
                       <span>{outlet.address}</span>
                     </p>
 
-                    <p className="text-gray-600 text-xs sm:text-sm flex items-center gap-2">
-                      <span className="text-[#e98d1a]">📞</span>
-                      {outlet.phone}
-                    </p>
-
-                    <p className="text-green-600 text-xs sm:text-sm font-semibold flex items-center gap-2 bg-green-50 px-3 py-1.5 rounded-lg w-fit">
-                      <span>🕒</span>
-                      {outlet.hours}
-                    </p>
+                    {outlet.phone && (
+                      <p className="text-gray-600 text-xs sm:text-sm flex items-center gap-2">
+                        <span className="text-[#e98d1a]">📞</span>
+                        {outlet.phone}
+                      </p>
+                    )}
                   </div>
                 </div>
 

@@ -32,6 +32,14 @@ export const OUTLETS: Outlet[] = [
     lat: 6.775279,
     lng: 79.884022,
   },
+
+  {
+    name: 'Neil Bakery - Lunawa',
+    address: 'Beachside- No.96/A, Puranappuraja Mawatha, Moratuwa',
+    hours: 'Open 5.30 AM - 9.00 PM',
+    lat: 6.7865,
+    lng: 79.8776,
+  },
   
   {
     name: 'Neil Bakery - Koralawella',
