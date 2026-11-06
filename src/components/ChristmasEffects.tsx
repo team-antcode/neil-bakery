@@ -29,6 +29,7 @@ export default function ChristmasEffects({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showMusicHint, setShowMusicHint] = useState(true);
 
   useEffect(() => {
     if (!enabled) return;
@@ -230,6 +231,14 @@ export default function ChristmasEffects({
     };
   }, []);
 
+  useEffect(() => {
+    const hintTimer = window.setTimeout(() => {
+      setShowMusicHint(false);
+    }, 8000);
+
+    return () => window.clearTimeout(hintTimer);
+  }, []);
+
   if (!enabled) return null;
 
   const togglePlayback = async () => {
@@ -259,15 +268,28 @@ export default function ChristmasEffects({
         className="pointer-events-none fixed inset-0 z-[60]"
       />
       <audio ref={audioRef} src={audioSrc} loop preload="none" />
-      <button
-        type="button"
-        onClick={() => void togglePlayback()}
-        aria-label={isPlaying ? 'Pause Christmas music' : 'Play Jingle Bells'}
-        aria-pressed={isPlaying}
-        className="fixed bottom-5 right-5 z-[70] flex h-10 w-10 items-center justify-center rounded-full bg-[#e98d1a] text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#e98d1a] focus:ring-offset-2"
-      >
-        {isPlaying ? <Pause className="h-4 w-4" /> : <Bell className="h-4 w-4" />}
-      </button>
+      <div className="group fixed bottom-5 right-5 z-[70] h-10 w-10">
+        <button
+          type="button"
+          onClick={() => void togglePlayback()}
+          aria-label={isPlaying ? 'Pause Christmas music' : 'Play Jingle Bells'}
+          aria-pressed={isPlaying}
+          className="fixed bottom-5 right-5 z-[70] flex h-10 w-10 items-center justify-center rounded-full bg-[#e98d1a] text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-[#e98d1a] focus:ring-offset-2"
+        >
+          {isPlaying ? <Pause className="h-4 w-4" /> : <Bell className="h-4 w-4" />}
+        </button>
+        <span
+          role="tooltip"
+          className={`pointer-events-none absolute right-12 top-1/2 w-max -translate-y-1/2 rounded-xl bg-gray-900 px-4 py-3 text-sm font-semibold text-white shadow-xl transition-all duration-300 ${
+            showMusicHint
+              ? 'translate-x-0 scale-100 opacity-100'
+              : 'translate-x-2 scale-95 opacity-0 group-hover:translate-x-0 group-hover:scale-100 group-hover:opacity-100 group-focus-within:translate-x-0 group-focus-within:scale-100 group-focus-within:opacity-100'
+          }`}
+        >
+          <span className="mr-1.5">🎄</span>
+          {isPlaying ? 'Christmas music is playing' : 'Tap for Jingle Bells!'}
+        </span>
+      </div>
     </>
   );
 }
